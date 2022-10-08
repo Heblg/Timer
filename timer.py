@@ -5,7 +5,7 @@ t,sec = int(input("time: ")),60
 
 if medida == "s":
     while t != 0:
-        print("{} segundos".format(t))
+        print("{} seconds".format(t))
         t -= 1
         sleep(1)
 
@@ -14,7 +14,7 @@ if medida == "m":
     while a != 0:
         a -= 1
         t -= 1/60
-        print("{} minutos e {:.0f} segundos".format(t.__trunc__(), sec))
+        print("{} minutes and {:.0f} seconds".format(t.__trunc__(), sec))
         sec -= 1
         if sec == 0:
             sec = 60
@@ -27,7 +27,7 @@ if medida == "h":
         a -= 1
         t -= 1/3600
         min -= 1/60
-        print("{} horas, {} minutos e {:.0f} segundos".format(t.__trunc__(), min.__trunc__(), sec))
+        print("{} hours, {} minutes and {:.0f} seconds".format(t.__trunc__(), min.__trunc__(), sec))
         sec -= 1
         if min == 0:
             min = 60
